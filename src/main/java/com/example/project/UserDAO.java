@@ -23,7 +23,7 @@ public class UserDAO {
             
         } catch (SQLException e) {
             System.err.println("Error while adding user!");
-            e.printStackTrace();
+            
         }
     }
 
@@ -52,7 +52,7 @@ public class UserDAO {
             
         } catch (SQLException e) {
             System.err.println("Error while retrieving user!");
-            e.printStackTrace();
+        
         }
         return user;
     }

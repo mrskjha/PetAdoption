@@ -18,10 +18,10 @@ public class DatabaseConnectionDAO {
             connection = DriverManager.getConnection(URL, USER, PASSWORD);
         } catch (ClassNotFoundException e) {
             System.out.println("MySQL JDBC Driver not found!");
-            e.printStackTrace();
+           
         } catch (SQLException e) {
             System.out.println("Failed to connect to the database!");
-            e.printStackTrace();
+           
         }
         return connection;
     }
